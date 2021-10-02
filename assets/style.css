@@ -1,6 +1,12 @@
 
  /* this soruce of the code below https://css-tricks.com/perfect-full-page-background-image/#awesome-easy-progressive-css3-way) */
-html, body {
+* {
+     box-sizing: border-box;
+
+}
+
+
+ html, body {
     margin: 0;
     padding: 0;
 }
@@ -11,4 +17,25 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px #474747;
+}
+
+main {
+    padding: 2vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1.time {
+    text-align: center;
+
 }
