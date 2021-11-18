@@ -18,7 +18,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     color: aliceblue;
-    text-shadow: 1px 1px 2px #474747;
+    text-shadow: px 0px 25px #474747;
 }
 
 main {
@@ -38,4 +38,9 @@ div.top {
 h1.time {
     text-align: center;
 
+}
+
+#stock {
+    margin-left: 10px;
+    align-items: center;
 }
