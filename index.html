@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/luxon.js"></script>
-    <title>Document</title>
+    <title>My Dashboard</title>
 </head>
 <body>
    
    <main>
        <div class="top">
            <div id="stock"></div>
-           <div>
+           <div id="weather">
                <img id="icon"></span>
-               <span id="city"></span>
-               <span id="temp"></span>
-               <span id="hum"></span>
+               <span class="weather" id="city"></span>
+               <span class="weather" id="temp"></span>
+               <span class="weather" id="hum"></span>
            </div>
 
        </div>
@@ -26,11 +27,51 @@
        <h1 id="time" class="time">Time HERE</h1>
    
     
-       
+       <div class="bottom">
        <p id="img-auth"></p1>
+        
+        <!-- Button trigger modal -->
+<p type="" class="settings" data-toggle="modal" data-target="#exampleModal">
+   Settings
+</p>
+  
+  <!-- Modal -->
+  <div class="modal fade settings" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="them">Choose Background Theme</label>
+                <select class="form-control" id="theme">
+                  <option>Meditation</option>
+                  <option>Dogs</option>
+                  <option>Cats</option>
+                  <option>Nature</option>
+                  <option>Banana</option>
+                </select>
+     
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" id="settings-btn" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
  </main>
 
-
-   <script src="./assets/script.js"></script> 
+ <script src="./assets/js/jquery.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script> 
+ <script src="./assets/script.js"></script>
+    
 </body>
 </html>
