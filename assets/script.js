@@ -3,6 +3,10 @@ let backgroundUrl = "https://apis.scrimba.com/unsplash/photos/random?orientation
 const wrongUrl = "https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=naturfghfghe"
 const stockUrl = "https://api.polygon.io/v1/open-close/AAPL/2020-10-14?adjusted=true&apiKey=386U_EAyyi_HmpaTSQPXvjYIBTSLU_Js"
 const timeNow = luxon.DateTime.local().toFormat("hh:mm a");
+const now = luxon.DateTime.now();
+
+console.log(now.toString());
+console.log(now.toString(luxon.DateTime.DATETIME_MED));
 const timeEl = $('#time')
 const stockEl = $('#stock')
 const city = "Houston"
@@ -18,6 +22,7 @@ let lon;
  backgroundUrl = "https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=" + theme 
 
 timeEl.text(timeNow)
+
 
 // let stockUrl
 function getBackground(theme){
