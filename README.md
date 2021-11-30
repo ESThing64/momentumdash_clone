@@ -2,7 +2,7 @@
 
 
 ## Deployed application 
-[Click here](https://esthing64.github.io/momentumdash_clone/)
+[Click here](https://esthing64.github.io/my_dashboard/)
 
 ## Description
 
